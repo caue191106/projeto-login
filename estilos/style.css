@@ -13,7 +13,7 @@
 }
 
 body, html {
-    background-color: #5E7B8C;
+    background-color: #88a3b3;
     height: 100vh;
     width: 100vw;
 }
@@ -28,7 +28,6 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
     width: 250px;
     height: 515px;
@@ -37,6 +36,7 @@ section#login {
     overflow: hidden;
     transition: width, 0.5s, height, 0.5s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#imagem {
@@ -49,21 +49,22 @@ section#login > div#imagem {
 
 section#login > div#formulario {
     display: block;
-    padding: 10px;
+    padding: 8px;
     display: block;
 }
 
 div#formulario > h1 {
     text-align: center;
     margin-bottom: 10px;
+    color: #1e3534;
 }
 
 div#formulario > p {
     font-size: 0.8em;
+    padding-bottom: 10px;
 }
 
 form > div.campo {
-    background-color: #5E7B8C;
     display: block;
     width: 100%;
     height: 40px;
@@ -75,6 +76,24 @@ form label {
     display: none;
 }
 
+div.campo > span {
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+    color: #316966;
+}
+
+div.campo > input {
+    background-color: white;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 1px solid #357270;
+    border-radius: 5px;
+    padding: 4px;
+    transform: translateY(-13px);
+}
+
 form > input[type=submit] {
     display: block;
     font-size: 1em;
@@ -83,12 +102,13 @@ form > input[type=submit] {
     background-color: #49a09d;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
 }
 
 form > input[type=submit]:hover {
     background-color: #388382;
+    transition: background-color, 0.2s;
 }
 
 form > a.botao {
@@ -104,10 +124,11 @@ form > a.botao {
     border: 1px solid #49a09d;
     border-radius: 5px;
     text-decoration: none;
+    transition: background-color, 0.2s;
 }
 
 form > a.botao:hover {
-    background-color: #6cdfd6;
+    background-color: #92d3ce;
 }
 
 form > a.botao > span {
